@@ -166,8 +166,8 @@ def main():
     with st.container():
         st.write("##### Calendar Controls")
         c1, c2, c3 = st.columns(3)
-        yy = c1.selectbox("Select Year", list(range(2020, 2031)), index=3)
-        mm = c2.selectbox("Select Month", list(calendar.month_name)[1:], index=10)
+        yy = c2.selectbox("Select Year", list(range(2020, 2031)), index=3)
+        mm = c1.selectbox("Select Month", list(calendar.month_name)[1:], index=10)
         dd = c3.selectbox("Select Day", list(calendar.day_abbr)[0:5])
 
         # Sidebar controls for month and year
